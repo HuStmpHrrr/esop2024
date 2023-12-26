@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Layered Modal Type Theory: Where Meta-programming Meets Intensional Analysis</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="styling.css" />
+  <script type="text/javascript" src="style.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+   $(function () {
+       $("pre>code").parents("pre").each(function(_) {
+           var pre = this;
+           for (c of pre.children) {
+               c.classList.add(pre.className);
+           }
+       })
+   })
+  
+   $(function() {
+       var h1elem = $("h1")[0];
+       h1elem.classList.add("project_title");
+       var header = $(`<div id="header_wrap" class="outer">
+          <header class="inner">
+            
+              <a id="forkme_banner" href="https://github.com/HuStmpHrrr/Kripke-style">Fork on GitHub</a>
+            ${h1elem.outerHTML}
+          </header>
+      </div>`);
+       var body = h1elem.parentNode;
+       h1elem.remove();
+       var sec = document.createElement("section");
+       sec.classList.add("inner");
+       sec.innerHTML = body.innerHTML;
+       body.innerHTML = '';
+       body.appendChild(header[0]);
+       body.appendChild(sec);
+   })
+  </script>
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h2 id="layered-modal-type-theory-where-meta-programming-meets-intensional-analysis">Layered Modal Type Theory: Where Meta-programming Meets Intensional Analysis</h2>
+<p>This artifact contains the Agda mechanization of a presheaf model of the simply typed layered modal type theory appearing at ESOP 2024. This artifact is self-contained, provided an Agda installation. The mechanization is tested to work with Agda 2.6.3.</p>
+<h3 id="type-checking">Type-checking</h3>
+<p>You can either load <code>src/README.agda</code> in Emacs, or run</p>
+<pre><code>agda src/README.agda</code></pre>
+<p>in the console.</p>
+<h3 id="agda-installation">Agda Installation</h3>
+<p>It is recommended to build Agda from source. To do so, one would need to install <code>stack</code>. This can be done via</p>
+<pre class="bash"><code>curl -sSL https://get.haskellstack.org/ | sh</code></pre>
+<p>Then the following script will use <code>stack</code> to install Agda in <code>~/.local/bin/</code>.</p>
+<pre class="bash"><code>git clone https://github.com/agda/agda
+cd agda
+git checkout release-2.6.3
+cp stack-8.8.4.yaml stack.yaml # choose your favourite Haskell version
+stack install # it is going to take a while
+cp ~/.local/bin/agda ~/.local/bin/agda-2.6.3
+cp ~/.local/bin/agda-mode ~/.local/bin/agda-mode-2.6.3</code></pre>
+<p>If Agda does not run, please check to make sure it is in your PATH.</p>
+</body>
+</html>

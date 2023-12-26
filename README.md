@@ -1,4 +1,4 @@
-## Layered Modal Type Theory
+## Layered Modal Type Theory: Where Meta-programming Meets Intensional Analysis
 
 This artifact contains the Agda mechanization of a presheaf model of the simply typed
 layered modal type theory appearing at ESOP 2024. This artifact is self-contained, 
