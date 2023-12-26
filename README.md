@@ -1,10 +1,10 @@
-## Layered Modal Type Theory: Where Meta-programming Meets Intensional Analysis
+# Layered Modal Type Theory: Where Meta-programming Meets Intensional Analysis
 
 This artifact contains the Agda mechanization of a presheaf model of the simply typed
 layered modal type theory appearing at ESOP 2024. This artifact is self-contained, 
 provided an Agda installation. The mechanization is tested to work with Agda 2.6.3.
 
-### Type-checking
+## Type-checking
 
 You can either load `src/README.agda` in Emacs, or run
 
@@ -14,7 +14,7 @@ agda src/README.agda
 
 in the console.
 
-### Agda Installation
+## Agda Installation
 
 It is recommended to build Agda from source. To do so, one would need to install
 `stack`. This can be done via
