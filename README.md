@@ -14,7 +14,7 @@ agda src/README.agda
 
 in the console.
 
-See a compiled web version [here](/README.html). 
+See a compiled web version [here](README.html). 
 
 ## Agda Installation
 
