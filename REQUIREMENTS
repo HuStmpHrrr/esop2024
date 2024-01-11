@@ -1,0 +1,5 @@
+Any recent computer would work.
+
+The code is expected to compile on a Linux computer or alike (e.g. MacOS or WSL on Windows).
+The mechanization uses Agda 2.6.3. Please see INSTALL for the installation steps.
+This artifact is self-contained and distributed with an external dependency to agda-stdlib. 

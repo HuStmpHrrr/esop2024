@@ -1,4 +1,4 @@
-{-# OPTIONS --without-K --guardedness #-}
+{-# OPTIONS --without-K --safe #-}
 
 module README where
 

@@ -52,11 +52,16 @@
 <body>
 <h1 id="layered-modal-type-theory-where-meta-programming-meets-intensional-analysis">Layered Modal Type Theory: Where Meta-programming Meets Intensional Analysis</h1>
 <p>This artifact contains the Agda mechanization of a presheaf model of the simply typed layered modal type theory appearing at ESOP 2024. This artifact is self-contained, provided an Agda installation. The mechanization is tested to work with Agda 2.6.3.</p>
+<h2 id="technical-report">Technical Report</h2>
+<p>A full technical report for this artifact is available <a href="https://arxiv.org/abs/2305.06548">here</a>.</p>
 <h2 id="type-checking">Type-checking</h2>
+<p>This artifact type-checks in safe Agda, i.e. with the following flags:</p>
+<pre class="agda"><code>{-# OPTIONS --without-K --safe #-}</code></pre>
+<p>so that it ensures the mechanization is constructed in a consistent environment and is complete.</p>
+<p>The artifact also depends on agda-stdlib which is included as a submodule or distributed in <code>lib/</code>.</p>
 <p>You can either load <code>src/README.agda</code> in Emacs, or run</p>
 <pre><code>agda src/README.agda</code></pre>
 <p>in the console.</p>
-<p>See a compiled web version <a href="README.html">here</a>.</p>
 <h2 id="agda-installation">Agda Installation</h2>
 <p>It is recommended to build Agda from source. To do so, one would need to install <code>stack</code>. This can be done via</p>
 <pre class="bash"><code>curl -sSL https://get.haskellstack.org/ | sh</code></pre>

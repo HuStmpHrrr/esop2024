@@ -4,7 +4,24 @@ This artifact contains the Agda mechanization of a presheaf model of the simply 
 layered modal type theory appearing at ESOP 2024. This artifact is self-contained, 
 provided an Agda installation. The mechanization is tested to work with Agda 2.6.3.
 
+## Technical Report
+
+A full technical report for this artifact is available
+[here](https://arxiv.org/abs/2305.06548). 
+
 ## Type-checking
+
+This artifact type-checks in safe Agda, i.e. with the following flags:
+
+```agda
+{-# OPTIONS --without-K --safe #-}
+```
+
+so that it ensures the mechanization is constructed in a consistent environment and is
+complete.
+
+The artifact also depends on agda-stdlib which is included as a submodule or
+distributed in `lib/`. 
 
 You can either load `src/README.agda` in Emacs, or run
 
@@ -13,8 +30,6 @@ agda src/README.agda
 ```
 
 in the console.
-
-See a compiled web version [here](README.html). 
 
 ## Agda Installation
 

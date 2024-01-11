@@ -18,3 +18,11 @@ cp ~/.local/bin/agda-mode ~/.local/bin/agda-mode-2.6.3
 ```
 
 If Agda does not run, please check to make sure it is in your PATH.
+
+Then you can either load `src/README.agda` in Emacs, or run
+
+```
+agda src/README.agda
+```
+
+in the console.
