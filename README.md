@@ -31,6 +31,8 @@ agda src/README.agda
 
 in the console.
 
+See a compiled web version [here](README.html). 
+
 ## Agda Installation
 
 It is recommended to build Agda from source. To do so, one would need to install
